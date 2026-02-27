@@ -65,9 +65,9 @@ bitfield! {
     pub struct GSTAT(u32);
     impl Debug;
     u8;
-    pub reset, _: 0;
-    pub drv_err, _: 1;
-    pub uv_cp, _: 2;
+    pub reset, set_reset: 0;
+    pub drv_err, set_drv_err: 1;
+    pub uv_cp, set_uv_cp: 2;
 }
 
 #[derive(Clone, Copy, Debug, Default, Eq, Hash, PartialEq)]
